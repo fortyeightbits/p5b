@@ -281,7 +281,7 @@ sys_open(void)
     if((ip = namei(path)) == 0)
       return -1;
     ilock(ip);
-    if((ip->type == T_DIR||ip->type == T_SMALLFILE) && omode != O_RDONLY){
+    if((ip->type == T_DIR) && omode != O_RDONLY){
       iunlockput(ip);
       return -1;
     }
