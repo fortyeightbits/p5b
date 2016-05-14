@@ -462,6 +462,7 @@ writei(struct inode *ip, char *src, uint off, uint n)
       if(off+n > 52)
           n = 52 - off;
       memmove((char*)(ip->addrs), src, n);
+      off = n;
   }
   else{
       if(off + n > MAXFILE*BSIZE)
