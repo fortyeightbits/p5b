@@ -19,7 +19,8 @@ USER_PROGS := \
 	zombie\
 	smallfileTest\
 	opentest\
-	read2
+	read2\
+	write2
 USER_PROGS := $(addprefix user/, $(USER_PROGS))
 
 # user library files
