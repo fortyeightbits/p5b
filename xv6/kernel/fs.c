@@ -423,7 +423,7 @@ readi(struct inode *ip, char *dst, uint off, uint n)
 
   if(ip->type == T_SMALLFILE)
   {
-      memmove(dst, ip->addrs, n);
+      memmove(dst,(((char*)(&ip->addrs))+off), n);
   }
 else
   {
@@ -461,8 +461,13 @@ writei(struct inode *ip, char *src, uint off, uint n)
   if(ip->type == T_SMALLFILE){
       if(off+n > 52)
           n = 52 - off;
-      memmove((char*)(ip->addrs), src, n);
-      off = n;
+      memmove((((char*)(&ip->addrs))+off), src, n);
+//      cprintf("src: %d\n", *src);
+//      uint temp;
+//      for(temp = 0; temp < 52; temp++){
+//        cprintf("temp : %d ; ip->addrs+temp : %d\n", temp,*(((char*)(&ip->addrs))+temp));
+//      }
+      off = off+n;
   }
   else{
       if(off + n > MAXFILE*BSIZE)

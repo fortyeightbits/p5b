@@ -58,6 +58,7 @@ main(int argc, char *argv[])
     }
     
     if(buf[i] != buf2[i]){
+     // printf(1, "buf[i] = %d ; buf2[i] = %d ; i = %d\n", buf[i], buf2[i], i);
       printf(1, "Data mismatch.\n");
       test_failed();
     }
