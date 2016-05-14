@@ -459,8 +459,8 @@ writei(struct inode *ip, char *src, uint off, uint n)
     return -1;
 
   if(ip->type == T_SMALLFILE){
-      if(off+n > 48)
-          n = 48 - off;
+      if(off+n > 52)
+          n = 52 - off;
       memmove((char*)(ip->addrs), src, n);
   }
   else{

@@ -17,7 +17,8 @@ USER_PROGS := \
 	usertests\
 	wc\
 	zombie\
-	smallfileTest
+	smallfileTest\
+	opentest
 USER_PROGS := $(addprefix user/, $(USER_PROGS))
 
 # user library files
