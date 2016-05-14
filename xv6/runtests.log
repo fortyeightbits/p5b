@@ -229,15 +229,15 @@ ld  -m    elf_i386 -nostdlib --omagic \
 dd if=/dev/zero of=xv6.img count=10000
 10000+0 records in
 10000+0 records out
-5120000 bytes (5.1 MB) copied, 0.0109973 s, 466 MB/s
+5120000 bytes (5.1 MB) copied, 0.0108492 s, 472 MB/s
 dd if=kernel/bootblock of=xv6.img conv=notrunc
 1+0 records in
 1+0 records out
-512 bytes (512 B) copied, 6.1322e-05 s, 8.3 MB/s
+512 bytes (512 B) copied, 6.4592e-05 s, 7.9 MB/s
 dd if=kernel/kernel of=xv6.img seek=1 conv=notrunc
 253+1 records in
 253+1 records out
-129556 bytes (130 kB) copied, 0.000265694 s, 488 MB/s
+129556 bytes (130 kB) copied, 0.000261272 s, 496 MB/s
 gcc -c  -iquote include -Wall -Werror -ggdb  -o tools/mkfs.o tools/mkfs.c
 gcc  tools/mkfs.o -o tools/mkfs
 mkdir -p fs
@@ -300,24 +300,24 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/smallfileTest fs/smallfileTest
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-wc
-grep
 tester
-ln
-init
-smallfileTest
+README
+grep
 sh
-stressfs
+usertests
+zombie
 kill
+ls
+stressfs
 forktest
 rm
+init
+smallfileTest
 mkdir
-usertests
 cat
-zombie
-README
+ln
 echo
-ls
+wc
 balloc: first 439 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/stressfs user/bin/grep user/bin/tester user/bin/kill user/bin/cat user/bin/mkdir user/bin/init user/bin/rm user/bin/echo user/bin/ls user/bin/ln user/bin/usertests user/bin/sh user/bin/wc user/bin/smallfileTest user/bin/zombie
@@ -344,24 +344,24 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-wc
-grep
 tester
-ln
-init
-smallfileTest
+README
+grep
 sh
-stressfs
+usertests
+zombie
 kill
+ls
+stressfs
 forktest
 rm
+init
+smallfileTest
 mkdir
-usertests
 cat
-zombie
-README
+ln
 echo
-ls
+wc
 balloc: first 440 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -375,7 +375,7 @@ init: starting sh
 $ tester
 tester
 TEST PASSED
-
+$ 
 
 test create PASSED (10 of 10)
  (Creates a small file and makes sure the type is properly set.)
@@ -398,24 +398,24 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-wc
-grep
 tester
-ln
-init
-smallfileTest
+README
+grep
 sh
-stressfs
+usertests
+zombie
 kill
+ls
+stressfs
 forktest
 rm
+init
+smallfileTest
 mkdir
-usertests
 cat
-zombie
-README
+ln
 echo
-ls
+wc
 balloc: first 440 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -429,7 +429,7 @@ init: starting sh
 $ tester
 tester
 TEST PASSED
-$ 
+
 
 test create2 PASSED (10 of 10)
  (Should not create a small file if O_SMALLFILE is passed in but not O_CREATE.)
@@ -452,24 +452,24 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-wc
-grep
 tester
-ln
-init
-smallfileTest
+README
+grep
 sh
-stressfs
+usertests
+zombie
 kill
+ls
+stressfs
 forktest
 rm
+init
+smallfileTest
 mkdir
-usertests
 cat
-zombie
-README
+ln
 echo
-ls
+wc
 balloc: first 441 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -484,7 +484,7 @@ $ tester
 tester
 Write failed!
 TEST FAILED
-
+$ 
 
 test open FAILED (0 of 10)
  (Open() called a second time without O_CREATE and O_SMALLFILE. Checks file's type to make sure it is T_SMALLFILE and that read and write still work)
@@ -508,24 +508,24 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-wc
-grep
 tester
-ln
-init
-smallfileTest
+README
+grep
 sh
-stressfs
+usertests
+zombie
 kill
+ls
+stressfs
 forktest
 rm
+init
+smallfileTest
 mkdir
-usertests
 cat
-zombie
-README
+ln
 echo
-ls
+wc
 balloc: first 441 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -565,24 +565,24 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-wc
-grep
 tester
-ln
-init
-smallfileTest
+README
+grep
 sh
-stressfs
+usertests
+zombie
 kill
+ls
+stressfs
 forktest
 rm
+init
+smallfileTest
 mkdir
-usertests
 cat
-zombie
-README
+ln
 echo
-ls
+wc
 balloc: first 441 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -621,24 +621,24 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-wc
-grep
 tester
-ln
-init
-smallfileTest
+README
+grep
 sh
-stressfs
+usertests
+zombie
 kill
+ls
+stressfs
 forktest
 rm
+init
+smallfileTest
 mkdir
-usertests
 cat
-zombie
-README
+ln
 echo
-ls
+wc
 balloc: first 441 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -678,24 +678,24 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-wc
-grep
 tester
-ln
-init
-smallfileTest
+README
+grep
 sh
-stressfs
+usertests
+zombie
 kill
+ls
+stressfs
 forktest
 rm
+init
+smallfileTest
 mkdir
-usertests
 cat
-zombie
-README
+ln
 echo
-ls
+wc
 balloc: first 441 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -710,7 +710,7 @@ $ tester
 tester
 Read failed! 0
 TEST FAILED
-
+$ 
 
 test write2 FAILED (0 of 10)
  (Repeatedly opens, writes, closes a small file. The last write should be the one that is persisted.)
@@ -734,24 +734,24 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-wc
-grep
 tester
-ln
-init
-smallfileTest
+README
+grep
 sh
-stressfs
+usertests
+zombie
 kill
+ls
+stressfs
 forktest
 rm
+init
+smallfileTest
 mkdir
-usertests
 cat
-zombie
-README
+ln
 echo
-ls
+wc
 balloc: first 441 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -766,7 +766,7 @@ $ tester
 tester
 Invalid file size.
 TEST FAILED
-$ 
+
 
 test write3 FAILED (0 of 10)
  (Repeatedly opens, writes to the end, closes a small file until file is full.)
@@ -790,24 +790,24 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-wc
-grep
 tester
-ln
-init
-smallfileTest
+README
+grep
 sh
-stressfs
+usertests
+zombie
 kill
+ls
+stressfs
 forktest
 rm
+init
+smallfileTest
 mkdir
-usertests
 cat
-zombie
-README
+ln
 echo
-ls
+wc
 balloc: first 442 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -846,24 +846,24 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-wc
-grep
 tester
-ln
-init
-smallfileTest
+README
+grep
 sh
-stressfs
+usertests
+zombie
 kill
+ls
+stressfs
 forktest
 rm
+init
+smallfileTest
 mkdir
-usertests
 cat
-zombie
-README
+ln
 echo
-ls
+wc
 balloc: first 441 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -902,24 +902,24 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-wc
-grep
 tester
-ln
-init
-smallfileTest
+README
+grep
 sh
-stressfs
+usertests
+zombie
 kill
+ls
+stressfs
 forktest
 rm
+init
+smallfileTest
 mkdir
-usertests
 cat
-zombie
-README
+ln
 echo
-ls
+wc
 balloc: first 442 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -934,7 +934,7 @@ $ tester
 tester
 Write failed!
 TEST FAILED
-
+$ 
 
 test writeonly FAILED (0 of 10)
  (Makes sure small files can be opened as write only and reads would fail.)
@@ -958,24 +958,24 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-wc
-grep
 tester
-ln
-init
-smallfileTest
+README
+grep
 sh
-stressfs
+usertests
+zombie
 kill
+ls
+stressfs
 forktest
 rm
+init
+smallfileTest
 mkdir
-usertests
 cat
-zombie
-README
+ln
 echo
-ls
+wc
 balloc: first 441 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -990,7 +990,7 @@ $ tester
 tester
 Failed to write to small file
 TEST FAILED
-$ 
+
 
 test remove FAILED (0 of 10)
  (Makes sure removing a small file does not corrupt the file system by freeing blocks.)
@@ -1014,24 +1014,24 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-wc
-grep
 tester
-ln
-init
-smallfileTest
+README
+grep
 sh
-stressfs
+usertests
+zombie
 kill
+ls
+stressfs
 forktest
 rm
+init
+smallfileTest
 mkdir
-usertests
 cat
-zombie
-README
+ln
 echo
-ls
+wc
 balloc: first 441 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -1075,24 +1075,24 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-wc
-grep
 tester
-ln
-init
-smallfileTest
+README
+grep
 sh
-stressfs
+usertests
+zombie
 kill
+ls
+stressfs
 forktest
 rm
+init
+smallfileTest
 mkdir
-usertests
 cat
-zombie
-README
+ln
 echo
-ls
+wc
 balloc: first 442 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -1108,7 +1108,7 @@ tester
 iteration 0
 Failed to write to small file
 TEST FAILED
-
+$ 
 
 test stress FAILED (0 of 10)
  (Creates and deletes a lot of small files one at a time to make sure nothing breaks under a heavy load.)
@@ -1132,24 +1132,24 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-wc
-grep
 tester
-ln
-init
-smallfileTest
+README
+grep
 sh
-stressfs
+usertests
+zombie
 kill
+ls
+stressfs
 forktest
 rm
+init
+smallfileTest
 mkdir
-usertests
 cat
-zombie
-README
+ln
 echo
-ls
+wc
 balloc: first 442 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -1189,24 +1189,24 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-wc
-grep
 tester
-ln
-init
-smallfileTest
+README
+grep
 sh
-stressfs
+usertests
+zombie
 kill
+ls
+stressfs
 forktest
 rm
+init
+smallfileTest
 mkdir
-usertests
 cat
-zombie
-README
+ln
 echo
-ls
+wc
 balloc: first 444 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -1221,7 +1221,7 @@ $ tester
 tester
 Read failed!
 TEST FAILED
-
+$ 
 
 test smallbig FAILED (0 of 10)
  (Creates bunch of small files; then creates bunch of big files to make sure normal files are not affected.)
@@ -1245,24 +1245,24 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-wc
-grep
 tester
-ln
-init
-smallfileTest
+README
+grep
 sh
-stressfs
+usertests
+zombie
 kill
+ls
+stressfs
 forktest
 rm
+init
+smallfileTest
 mkdir
-usertests
 cat
-zombie
-README
+ln
 echo
-ls
+wc
 balloc: first 443 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -1475,7 +1475,7 @@ deleting and recreating file at inode 175
 deleting and recreating file at inode 184
 deleting and recreating file at inode 193
 TEST PASSED
-
+$ 
 
 test inode PASSED (10 of 10)
  (Uses all inodes in the file system; then repeatedly deleted and creates a file and makes sure the correct inode is reused for the new file.)
@@ -1498,24 +1498,24 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-wc
-grep
 tester
-ln
-init
-smallfileTest
+README
+grep
 sh
-stressfs
+usertests
+zombie
 kill
+ls
+stressfs
 forktest
 rm
+init
+smallfileTest
 mkdir
-usertests
 cat
-zombie
-README
+ln
 echo
-ls
+wc
 balloc: first 443 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -1766,7 +1766,7 @@ recreating file at inode 175
 recreating file at inode 184
 recreating file at inode 193
 TEST PASSED
-$ 
+
 
 test inode2 PASSED (10 of 10)
  (Uses all inodes in the file system; then repeatedly deletes bunch of files and then creates that many files and makes sure the correct inodes are reused for the new files.)
@@ -1789,24 +1789,24 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-wc
-grep
 tester
-ln
-init
-smallfileTest
+README
+grep
 sh
-stressfs
+usertests
+zombie
 kill
+ls
+stressfs
 forktest
 rm
+init
+smallfileTest
 mkdir
-usertests
 cat
-zombie
-README
+ln
 echo
-ls
+wc
 balloc: first 489 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
@@ -1876,7 +1876,7 @@ fork test: ok
 bigdir test: ok
 exec test
 TEST PASSED
-$ 
+
 
 test usertests PASSED (10 of 10)
  (Running standard tests to make sure you did not break anything for normal files. ***Note that the test will take a while since a lot of things are being tested.***)
