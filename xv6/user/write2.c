@@ -18,7 +18,7 @@ test_passed()
  exit();
 }
 
-#define NITERATIONS 1000
+#define NITERATIONS 5
 
 int
 main(int argc, char *argv[])
@@ -58,6 +58,7 @@ main(int argc, char *argv[])
   close(fd);
   
   if(result != buf[NITERATIONS-1]){
+    printf(1, "buf[0] : %d ; result: %d\n", buf[0], result);
     printf(1, "Data mismatch.\n");
     test_failed();
   }
