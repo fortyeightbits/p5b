@@ -8,61 +8,62 @@ build xv6 using make
 **********************************************************************
 Trying to build project using make
 make
-Makefile:149: kernel/bio.d: No such file or directory
-Makefile:149: kernel/console.d: No such file or directory
-Makefile:149: kernel/exec.d: No such file or directory
-Makefile:149: kernel/file.d: No such file or directory
-Makefile:149: kernel/fs.d: No such file or directory
-Makefile:149: kernel/ide.d: No such file or directory
-Makefile:149: kernel/ioapic.d: No such file or directory
-Makefile:149: kernel/kalloc.d: No such file or directory
-Makefile:149: kernel/kbd.d: No such file or directory
-Makefile:149: kernel/lapic.d: No such file or directory
-Makefile:149: kernel/main.d: No such file or directory
-Makefile:149: kernel/mp.d: No such file or directory
-Makefile:149: kernel/picirq.d: No such file or directory
-Makefile:149: kernel/pipe.d: No such file or directory
-Makefile:149: kernel/proc.d: No such file or directory
-Makefile:149: kernel/spinlock.d: No such file or directory
-Makefile:149: kernel/string.d: No such file or directory
-Makefile:149: kernel/swtch.d: No such file or directory
-Makefile:149: kernel/syscall.d: No such file or directory
-Makefile:149: kernel/sysfile.d: No such file or directory
-Makefile:149: kernel/sysproc.d: No such file or directory
-Makefile:149: kernel/timer.d: No such file or directory
-Makefile:149: kernel/trapasm.d: No such file or directory
-Makefile:149: kernel/trap.d: No such file or directory
-Makefile:149: kernel/uart.d: No such file or directory
-Makefile:149: kernel/vectors.d: No such file or directory
-Makefile:149: kernel/vm.d: No such file or directory
-Makefile:149: kernel/bootmain.d: No such file or directory
-Makefile:149: kernel/bootasm.d: No such file or directory
-Makefile:149: kernel/multiboot.d: No such file or directory
-Makefile:149: kernel/data.d: No such file or directory
-Makefile:149: kernel/bootother.d: No such file or directory
-Makefile:149: kernel/initcode.d: No such file or directory
-Makefile:149: user/cat.d: No such file or directory
-Makefile:149: user/echo.d: No such file or directory
-Makefile:149: user/forktest.d: No such file or directory
-Makefile:149: user/grep.d: No such file or directory
-Makefile:149: user/init.d: No such file or directory
-Makefile:149: user/kill.d: No such file or directory
-Makefile:149: user/ln.d: No such file or directory
-Makefile:149: user/ls.d: No such file or directory
-Makefile:149: user/mkdir.d: No such file or directory
-Makefile:149: user/rm.d: No such file or directory
-Makefile:149: user/sh.d: No such file or directory
-Makefile:149: user/stressfs.d: No such file or directory
-Makefile:149: user/tester.d: No such file or directory
-Makefile:149: user/usertests.d: No such file or directory
-Makefile:149: user/wc.d: No such file or directory
-Makefile:149: user/zombie.d: No such file or directory
-Makefile:149: user/smallfileTest.d: No such file or directory
-Makefile:149: user/ulib.d: No such file or directory
-Makefile:149: user/usys.d: No such file or directory
-Makefile:149: user/printf.d: No such file or directory
-Makefile:149: user/umalloc.d: No such file or directory
-Makefile:149: tools/mkfs.d: No such file or directory
+Makefile:150: kernel/bio.d: No such file or directory
+Makefile:150: kernel/console.d: No such file or directory
+Makefile:150: kernel/exec.d: No such file or directory
+Makefile:150: kernel/file.d: No such file or directory
+Makefile:150: kernel/fs.d: No such file or directory
+Makefile:150: kernel/ide.d: No such file or directory
+Makefile:150: kernel/ioapic.d: No such file or directory
+Makefile:150: kernel/kalloc.d: No such file or directory
+Makefile:150: kernel/kbd.d: No such file or directory
+Makefile:150: kernel/lapic.d: No such file or directory
+Makefile:150: kernel/main.d: No such file or directory
+Makefile:150: kernel/mp.d: No such file or directory
+Makefile:150: kernel/picirq.d: No such file or directory
+Makefile:150: kernel/pipe.d: No such file or directory
+Makefile:150: kernel/proc.d: No such file or directory
+Makefile:150: kernel/spinlock.d: No such file or directory
+Makefile:150: kernel/string.d: No such file or directory
+Makefile:150: kernel/swtch.d: No such file or directory
+Makefile:150: kernel/syscall.d: No such file or directory
+Makefile:150: kernel/sysfile.d: No such file or directory
+Makefile:150: kernel/sysproc.d: No such file or directory
+Makefile:150: kernel/timer.d: No such file or directory
+Makefile:150: kernel/trapasm.d: No such file or directory
+Makefile:150: kernel/trap.d: No such file or directory
+Makefile:150: kernel/uart.d: No such file or directory
+Makefile:150: kernel/vectors.d: No such file or directory
+Makefile:150: kernel/vm.d: No such file or directory
+Makefile:150: kernel/bootmain.d: No such file or directory
+Makefile:150: kernel/bootasm.d: No such file or directory
+Makefile:150: kernel/multiboot.d: No such file or directory
+Makefile:150: kernel/data.d: No such file or directory
+Makefile:150: kernel/bootother.d: No such file or directory
+Makefile:150: kernel/initcode.d: No such file or directory
+Makefile:150: user/cat.d: No such file or directory
+Makefile:150: user/echo.d: No such file or directory
+Makefile:150: user/forktest.d: No such file or directory
+Makefile:150: user/grep.d: No such file or directory
+Makefile:150: user/init.d: No such file or directory
+Makefile:150: user/kill.d: No such file or directory
+Makefile:150: user/ln.d: No such file or directory
+Makefile:150: user/ls.d: No such file or directory
+Makefile:150: user/mkdir.d: No such file or directory
+Makefile:150: user/rm.d: No such file or directory
+Makefile:150: user/sh.d: No such file or directory
+Makefile:150: user/stressfs.d: No such file or directory
+Makefile:150: user/tester.d: No such file or directory
+Makefile:150: user/usertests.d: No such file or directory
+Makefile:150: user/wc.d: No such file or directory
+Makefile:150: user/zombie.d: No such file or directory
+Makefile:150: user/smallfileTest.d: No such file or directory
+Makefile:150: user/opentest.d: No such file or directory
+Makefile:150: user/ulib.d: No such file or directory
+Makefile:150: user/usys.d: No such file or directory
+Makefile:150: user/printf.d: No such file or directory
+Makefile:150: user/umalloc.d: No such file or directory
+Makefile:150: tools/mkfs.d: No such file or directory
 gcc  -iquote include -Wall -Werror -ggdb  \
 	  -M -MG tools/mkfs.c -MF tools/mkfs.d -MT tools/mkfs.d -MT tools/mkfs.o
 gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
@@ -73,6 +74,8 @@ gcc  -I include -nostdinc -ggdb  -fno-pic -fno-builtin -fno-strict-aliasing -fno
 		-M -MG user/usys.S -MF user/usys.d -MT user/usys.d -MT user/usys.o
 gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
 		-M -MG user/ulib.c -MF user/ulib.d -MT user/ulib.d -MT user/ulib.o
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
+		-M -MG user/opentest.c -MF user/opentest.d -MT user/opentest.d -MT user/opentest.o
 gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
 		-M -MG user/smallfileTest.c -MF user/smallfileTest.d -MT user/smallfileTest.d -MT user/smallfileTest.o
 gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
@@ -229,15 +232,15 @@ ld  -m    elf_i386 -nostdlib --omagic \
 dd if=/dev/zero of=xv6.img count=10000
 10000+0 records in
 10000+0 records out
-5120000 bytes (5.1 MB) copied, 0.0108492 s, 472 MB/s
+5120000 bytes (5.1 MB) copied, 0.0108229 s, 473 MB/s
 dd if=kernel/bootblock of=xv6.img conv=notrunc
 1+0 records in
 1+0 records out
-512 bytes (512 B) copied, 6.4592e-05 s, 7.9 MB/s
+512 bytes (512 B) copied, 6.9518e-05 s, 7.4 MB/s
 dd if=kernel/kernel of=xv6.img seek=1 conv=notrunc
 253+1 records in
 253+1 records out
-129556 bytes (130 kB) copied, 0.000261272 s, 496 MB/s
+129556 bytes (130 kB) copied, 0.000273822 s, 473 MB/s
 gcc -c  -iquote include -Wall -Werror -ggdb  -o tools/mkfs.o tools/mkfs.c
 gcc  tools/mkfs.o -o tools/mkfs
 mkdir -p fs
@@ -298,29 +301,33 @@ cp user/bin/zombie fs/zombie
 gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/smallfileTest.o user/smallfileTest.c
 ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/smallfileTest user/smallfileTest.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
 cp user/bin/smallfileTest fs/smallfileTest
+gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/opentest.o user/opentest.c
+ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/opentest user/opentest.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
+cp user/bin/opentest fs/opentest
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-tester
-README
-grep
-sh
-usertests
-zombie
-kill
-ls
-stressfs
-forktest
 rm
 init
-smallfileTest
-mkdir
-cat
+grep
 ln
+kill
+smallfileTest
+cat
+tester
+sh
+mkdir
 echo
+opentest
+zombie
+forktest
+stressfs
+usertests
+README
 wc
-balloc: first 439 blocks have been allocated
+ls
+balloc: first 462 blocks have been allocated
 balloc: write bitmap block at sector 28
-rm user/bin/stressfs user/bin/grep user/bin/tester user/bin/kill user/bin/cat user/bin/mkdir user/bin/init user/bin/rm user/bin/echo user/bin/ls user/bin/ln user/bin/usertests user/bin/sh user/bin/wc user/bin/smallfileTest user/bin/zombie
+rm user/bin/stressfs user/bin/grep user/bin/tester user/bin/kill user/bin/cat user/bin/mkdir user/bin/init user/bin/rm user/bin/echo user/bin/ls user/bin/ln user/bin/usertests user/bin/sh user/bin/wc user/bin/opentest user/bin/smallfileTest user/bin/zombie
 
 
 test build PASSED
@@ -344,25 +351,26 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-tester
-README
-grep
-sh
-usertests
-zombie
-kill
-ls
-stressfs
-forktest
 rm
 init
-smallfileTest
-mkdir
-cat
+grep
 ln
+kill
+smallfileTest
+cat
+tester
+sh
+mkdir
 echo
+opentest
+zombie
+forktest
+stressfs
+usertests
+README
 wc
-balloc: first 440 blocks have been allocated
+ls
+balloc: first 463 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -398,25 +406,26 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-tester
-README
-grep
-sh
-usertests
-zombie
-kill
-ls
-stressfs
-forktest
 rm
 init
-smallfileTest
-mkdir
-cat
+grep
 ln
+kill
+smallfileTest
+cat
+tester
+sh
+mkdir
 echo
+opentest
+zombie
+forktest
+stressfs
+usertests
+README
 wc
-balloc: first 440 blocks have been allocated
+ls
+balloc: first 463 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -429,7 +438,7 @@ init: starting sh
 $ tester
 tester
 TEST PASSED
-
+$ 
 
 test create2 PASSED (10 of 10)
  (Should not create a small file if O_SMALLFILE is passed in but not O_CREATE.)
@@ -452,25 +461,26 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-tester
-README
-grep
-sh
-usertests
-zombie
-kill
-ls
-stressfs
-forktest
 rm
 init
-smallfileTest
-mkdir
-cat
+grep
 ln
+kill
+smallfileTest
+cat
+tester
+sh
+mkdir
 echo
+opentest
+zombie
+forktest
+stressfs
+usertests
+README
 wc
-balloc: first 441 blocks have been allocated
+ls
+balloc: first 464 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -482,9 +492,9 @@ cpu0: starting
 init: starting sh
 $ tester
 tester
-Write failed!
+Read failed!
 TEST FAILED
-$ 
+
 
 test open FAILED (0 of 10)
  (Open() called a second time without O_CREATE and O_SMALLFILE. Checks file's type to make sure it is T_SMALLFILE and that read and write still work)
@@ -508,25 +518,26 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-tester
-README
-grep
-sh
-usertests
-zombie
-kill
-ls
-stressfs
-forktest
 rm
 init
-smallfileTest
-mkdir
-cat
+grep
 ln
+kill
+smallfileTest
+cat
+tester
+sh
+mkdir
 echo
+opentest
+zombie
+forktest
+stressfs
+usertests
+README
 wc
-balloc: first 441 blocks have been allocated
+ls
+balloc: first 464 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -541,7 +552,6 @@ tester
 bytes written = 25
 Read failed!
 TEST FAILED
-
 
 test read FAILED (0 of 10)
  (Tries to read more than possible and makes sure only amount available is read.)
@@ -565,25 +575,26 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-tester
-README
-grep
-sh
-usertests
-zombie
-kill
-ls
-stressfs
-forktest
 rm
 init
-smallfileTest
-mkdir
-cat
+grep
 ln
+kill
+smallfileTest
+cat
+tester
+sh
+mkdir
 echo
+opentest
+zombie
+forktest
+stressfs
+usertests
+README
 wc
-balloc: first 441 blocks have been allocated
+ls
+balloc: first 464 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -595,7 +606,7 @@ cpu0: starting
 init: starting sh
 $ tester
 tester
-Write failed!
+Read failed!
 TEST FAILED
 
 
@@ -621,25 +632,26 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-tester
-README
-grep
-sh
-usertests
-zombie
-kill
-ls
-stressfs
-forktest
 rm
 init
-smallfileTest
-mkdir
-cat
+grep
 ln
+kill
+smallfileTest
+cat
+tester
+sh
+mkdir
 echo
+opentest
+zombie
+forktest
+stressfs
+usertests
+README
 wc
-balloc: first 441 blocks have been allocated
+ls
+balloc: first 464 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -651,8 +663,9 @@ cpu0: starting
 init: starting sh
 $ tester
 tester
-bytes written = 48
-Failed to write the right amount to the small file.
+bytes written = 52
+bytes read = 0
+Failed to read the right amount to the small file.
 TEST FAILED
 
 
@@ -678,25 +691,26 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-tester
-README
-grep
-sh
-usertests
-zombie
-kill
-ls
-stressfs
-forktest
 rm
 init
-smallfileTest
-mkdir
-cat
+grep
 ln
+kill
+smallfileTest
+cat
+tester
+sh
+mkdir
 echo
+opentest
+zombie
+forktest
+stressfs
+usertests
+README
 wc
-balloc: first 441 blocks have been allocated
+ls
+balloc: first 464 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -710,7 +724,7 @@ $ tester
 tester
 Read failed! 0
 TEST FAILED
-$ 
+
 
 test write2 FAILED (0 of 10)
  (Repeatedly opens, writes, closes a small file. The last write should be the one that is persisted.)
@@ -734,25 +748,26 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-tester
-README
-grep
-sh
-usertests
-zombie
-kill
-ls
-stressfs
-forktest
 rm
 init
-smallfileTest
-mkdir
-cat
+grep
 ln
+kill
+smallfileTest
+cat
+tester
+sh
+mkdir
 echo
+opentest
+zombie
+forktest
+stressfs
+usertests
+README
 wc
-balloc: first 441 blocks have been allocated
+ls
+balloc: first 464 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -790,25 +805,26 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-tester
-README
-grep
-sh
-usertests
-zombie
-kill
-ls
-stressfs
-forktest
 rm
 init
-smallfileTest
-mkdir
-cat
+grep
 ln
+kill
+smallfileTest
+cat
+tester
+sh
+mkdir
 echo
+opentest
+zombie
+forktest
+stressfs
+usertests
+README
 wc
-balloc: first 442 blocks have been allocated
+ls
+balloc: first 465 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -822,7 +838,7 @@ $ tester
 tester
 Failed to do a truncated big write
 TEST FAILED
-
+$ 
 
 test write4 FAILED (0 of 10)
  (Small write followed by a big write to a small file should truncate the big write upto max small file size.)
@@ -846,25 +862,26 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-tester
-README
-grep
-sh
-usertests
-zombie
-kill
-ls
-stressfs
-forktest
 rm
 init
-smallfileTest
-mkdir
-cat
+grep
 ln
+kill
+smallfileTest
+cat
+tester
+sh
+mkdir
 echo
+opentest
+zombie
+forktest
+stressfs
+usertests
+README
 wc
-balloc: first 441 blocks have been allocated
+ls
+balloc: first 464 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -876,9 +893,9 @@ cpu0: starting
 init: starting sh
 $ tester
 tester
-Write failed!
+Read failed!
 TEST FAILED
-
+$ 
 
 test readonly FAILED (0 of 10)
  (Makes sure small files can be opened as read only and writes would fail.)
@@ -902,25 +919,26 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-tester
-README
-grep
-sh
-usertests
-zombie
-kill
-ls
-stressfs
-forktest
 rm
 init
-smallfileTest
-mkdir
-cat
+grep
 ln
+kill
+smallfileTest
+cat
+tester
+sh
+mkdir
 echo
+opentest
+zombie
+forktest
+stressfs
+usertests
+README
 wc
-balloc: first 442 blocks have been allocated
+ls
+balloc: first 465 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -932,7 +950,7 @@ cpu0: starting
 init: starting sh
 $ tester
 tester
-Write failed!
+Read failed!
 TEST FAILED
 $ 
 
@@ -958,25 +976,26 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-tester
-README
-grep
-sh
-usertests
-zombie
-kill
-ls
-stressfs
-forktest
 rm
 init
-smallfileTest
-mkdir
-cat
+grep
 ln
+kill
+smallfileTest
+cat
+tester
+sh
+mkdir
 echo
+opentest
+zombie
+forktest
+stressfs
+usertests
+README
 wc
-balloc: first 441 blocks have been allocated
+ls
+balloc: first 464 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -988,13 +1007,11 @@ cpu0: starting
 init: starting sh
 $ tester
 tester
-Failed to write to small file
-TEST FAILED
+TEST PASSED
+$
 
-
-test remove FAILED (0 of 10)
+test remove PASSED (10 of 10)
  (Makes sure removing a small file does not corrupt the file system by freeing blocks.)
- tester failed
 
 starting fulldisk
 
@@ -1014,25 +1031,26 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-tester
-README
-grep
-sh
-usertests
-zombie
-kill
-ls
-stressfs
-forktest
 rm
 init
-smallfileTest
-mkdir
-cat
+grep
 ln
+kill
+smallfileTest
+cat
+tester
+sh
+mkdir
 echo
+opentest
+zombie
+forktest
+stressfs
+usertests
+README
 wc
-balloc: first 441 blocks have been allocated
+ls
+balloc: first 464 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -1075,25 +1093,26 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-tester
-README
-grep
-sh
-usertests
-zombie
-kill
-ls
-stressfs
-forktest
 rm
 init
-smallfileTest
-mkdir
-cat
+grep
 ln
+kill
+smallfileTest
+cat
+tester
+sh
+mkdir
 echo
+opentest
+zombie
+forktest
+stressfs
+usertests
+README
 wc
-balloc: first 442 blocks have been allocated
+ls
+balloc: first 465 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -1106,9 +1125,9 @@ init: starting sh
 $ tester
 tester
 iteration 0
-Failed to write to small file
+Read failed!
 TEST FAILED
-$ 
+
 
 test stress FAILED (0 of 10)
  (Creates and deletes a lot of small files one at a time to make sure nothing breaks under a heavy load.)
@@ -1132,25 +1151,26 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-tester
-README
-grep
-sh
-usertests
-zombie
-kill
-ls
-stressfs
-forktest
 rm
 init
-smallfileTest
-mkdir
-cat
+grep
 ln
+kill
+smallfileTest
+cat
+tester
+sh
+mkdir
 echo
+opentest
+zombie
+forktest
+stressfs
+usertests
+README
 wc
-balloc: first 442 blocks have been allocated
+ls
+balloc: first 465 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -1163,7 +1183,7 @@ init: starting sh
 $ tester
 tester
 iteration 0
-Failed to write to small file
+Read failed!
 TEST FAILED
 
 
@@ -1189,25 +1209,26 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-tester
-README
-grep
-sh
-usertests
-zombie
-kill
-ls
-stressfs
-forktest
 rm
 init
-smallfileTest
-mkdir
-cat
+grep
 ln
+kill
+smallfileTest
+cat
+tester
+sh
+mkdir
 echo
+opentest
+zombie
+forktest
+stressfs
+usertests
+README
 wc
-balloc: first 444 blocks have been allocated
+ls
+balloc: first 467 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -1245,25 +1266,26 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-tester
-README
-grep
-sh
-usertests
-zombie
-kill
-ls
-stressfs
-forktest
 rm
 init
-smallfileTest
-mkdir
-cat
+grep
 ln
+kill
+smallfileTest
+cat
+tester
+sh
+mkdir
 echo
+opentest
+zombie
+forktest
+stressfs
+usertests
+README
 wc
-balloc: first 443 blocks have been allocated
+ls
+balloc: first 466 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -1275,8 +1297,7 @@ cpu0: starting
 init: starting sh
 $ tester
 tester
-latest_inode = 21
-creating file at inode 22
+latest_inode = 22
 creating file at inode 23
 creating file at inode 24
 creating file at inode 25
@@ -1455,25 +1476,25 @@ creating file at inode 197
 creating file at inode 198
 creating file at inode 199
 used up all inodes
-deleting and recreating file at inode 31
-deleting and recreating file at inode 40
-deleting and recreating file at inode 49
-deleting and recreating file at inode 58
-deleting and recreating file at inode 67
-deleting and recreating file at inode 76
-deleting and recreating file at inode 85
-deleting and recreating file at inode 94
-deleting and recreating file at inode 103
-deleting and recreating file at inode 112
-deleting and recreating file at inode 121
-deleting and recreating file at inode 130
-deleting and recreating file at inode 139
-deleting and recreating file at inode 148
-deleting and recreating file at inode 157
-deleting and recreating file at inode 166
-deleting and recreating file at inode 175
-deleting and recreating file at inode 184
-deleting and recreating file at inode 193
+deleting and recreating file at inode 32
+deleting and recreating file at inode 41
+deleting and recreating file at inode 50
+deleting and recreating file at inode 59
+deleting and recreating file at inode 68
+deleting and recreating file at inode 77
+deleting and recreating file at inode 86
+deleting and recreating file at inode 95
+deleting and recreating file at inode 104
+deleting and recreating file at inode 113
+deleting and recreating file at inode 122
+deleting and recreating file at inode 131
+deleting and recreating file at inode 140
+deleting and recreating file at inode 149
+deleting and recreating file at inode 158
+deleting and recreating file at inode 167
+deleting and recreating file at inode 176
+deleting and recreating file at inode 185
+deleting and recreating file at inode 194
 TEST PASSED
 $ 
 
@@ -1498,25 +1519,26 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-tester
-README
-grep
-sh
-usertests
-zombie
-kill
-ls
-stressfs
-forktest
 rm
 init
-smallfileTest
-mkdir
-cat
+grep
 ln
+kill
+smallfileTest
+cat
+tester
+sh
+mkdir
 echo
+opentest
+zombie
+forktest
+stressfs
+usertests
+README
 wc
-balloc: first 443 blocks have been allocated
+ls
+balloc: first 466 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -1528,8 +1550,7 @@ cpu0: starting
 init: starting sh
 $ tester
 tester
-latest_inode = 21
-creating file at inode 22
+latest_inode = 22
 creating file at inode 23
 creating file at inode 24
 creating file at inode 25
@@ -1708,63 +1729,63 @@ creating file at inode 197
 creating file at inode 198
 creating file at inode 199
 used up all inodes
-deleting file at inode 31
-deleting file at inode 40
-deleting file at inode 49
-deleting file at inode 58
-deleting file at inode 67
-deleting file at inode 76
-deleting file at inode 85
-deleting file at inode 94
-deleting file at inode 103
-deleting file at inode 112
-deleting file at inode 121
-deleting file at inode 130
-deleting file at inode 139
-deleting file at inode 148
-deleting file at inode 157
-deleting file at inode 166
-deleting file at inode 175
-deleting file at inode 184
-deleting file at inode 193
-testing existence of file at inode 31
-testing existence of file at inode 40
-testing existence of file at inode 49
-testing existence of file at inode 58
-testing existence of file at inode 67
-testing existence of file at inode 76
-testing existence of file at inode 85
-testing existence of file at inode 94
-testing existence of file at inode 103
-testing existence of file at inode 112
-testing existence of file at inode 121
-testing existence of file at inode 130
-testing existence of file at inode 139
-testing existence of file at inode 148
-testing existence of file at inode 157
-testing existence of file at inode 166
-testing existence of file at inode 175
-testing existence of file at inode 184
-testing existence of file at inode 193
-recreating file at inode 31
-recreating file at inode 40
-recreating file at inode 49
-recreating file at inode 58
-recreating file at inode 67
-recreating file at inode 76
-recreating file at inode 85
-recreating file at inode 94
-recreating file at inode 103
-recreating file at inode 112
-recreating file at inode 121
-recreating file at inode 130
-recreating file at inode 139
-recreating file at inode 148
-recreating file at inode 157
-recreating file at inode 166
-recreating file at inode 175
-recreating file at inode 184
-recreating file at inode 193
+deleting file at inode 32
+deleting file at inode 41
+deleting file at inode 50
+deleting file at inode 59
+deleting file at inode 68
+deleting file at inode 77
+deleting file at inode 86
+deleting file at inode 95
+deleting file at inode 104
+deleting file at inode 113
+deleting file at inode 122
+deleting file at inode 131
+deleting file at inode 140
+deleting file at inode 149
+deleting file at inode 158
+deleting file at inode 167
+deleting file at inode 176
+deleting file at inode 185
+deleting file at inode 194
+testing existence of file at inode 32
+testing existence of file at inode 41
+testing existence of file at inode 50
+testing existence of file at inode 59
+testing existence of file at inode 68
+testing existence of file at inode 77
+testing existence of file at inode 86
+testing existence of file at inode 95
+testing existence of file at inode 104
+testing existence of file at inode 113
+testing existence of file at inode 122
+testing existence of file at inode 131
+testing existence of file at inode 140
+testing existence of file at inode 149
+testing existence of file at inode 158
+testing existence of file at inode 167
+testing existence of file at inode 176
+testing existence of file at inode 185
+testing existence of file at inode 194
+recreating file at inode 32
+recreating file at inode 41
+recreating file at inode 50
+recreating file at inode 59
+recreating file at inode 68
+recreating file at inode 77
+recreating file at inode 86
+recreating file at inode 95
+recreating file at inode 104
+recreating file at inode 113
+recreating file at inode 122
+recreating file at inode 131
+recreating file at inode 140
+recreating file at inode 149
+recreating file at inode 158
+recreating file at inode 167
+recreating file at inode 176
+recreating file at inode 185
+recreating file at inode 194
 TEST PASSED
 
 
@@ -1789,25 +1810,26 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-tester
-README
-grep
-sh
-usertests
-zombie
-kill
-ls
-stressfs
-forktest
 rm
 init
-smallfileTest
-mkdir
-cat
+grep
 ln
+kill
+smallfileTest
+cat
+tester
+sh
+mkdir
 echo
+opentest
+zombie
+forktest
+stressfs
+usertests
+README
 wc
-balloc: first 489 blocks have been allocated
+ls
+balloc: first 512 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -1876,7 +1898,7 @@ fork test: ok
 bigdir test: ok
 exec test
 TEST PASSED
-
+$ 
 
 test usertests PASSED (10 of 10)
  (Running standard tests to make sure you did not break anything for normal files. ***Note that the test will take a while since a lot of things are being tested.***)
@@ -1928,9 +1950,8 @@ test writeonly FAILED (0 of 10)
  (Makes sure small files can be opened as write only and reads would fail.)
  tester failed
 
-test remove FAILED (0 of 10)
+test remove PASSED (10 of 10)
  (Makes sure removing a small file does not corrupt the file system by freeing blocks.)
- tester failed
 
 test fulldisk PASSED (10 of 10)
  (First uses all free blocks on disk for normal files and then makes sure small files can still be created. ***Note that the test will take a while since big files are created.***)
@@ -1956,6 +1977,6 @@ test inode2 PASSED (10 of 10)
 test usertests PASSED (10 of 10)
  (Running standard tests to make sure you did not break anything for normal files. ***Note that the test will take a while since a lot of things are being tested.***)
 
-Passed 7 of 20 tests.
-Overall 7 of 20
-Points 60 of 190
+Passed 8 of 20 tests.
+Overall 8 of 20
+Points 70 of 190
