@@ -54,13 +54,13 @@ OBJDUMP := objdump
 
 # If the makefile can't find QEMU, specify its path here
 #QEMU :=
-
+# /usr/bin/qemu-system-x86_64
 # Try to infer the correct QEMU if not specified
 ifndef QEMU
 QEMU := $(shell if which qemu 1> /dev/null 2> /dev/null; \
 	then echo qemu; exit; \
 	else \
-	qemu=/usr/bin/qemu-system-x86_64; \
+	qemu=/u/c/s/cs537-2/ta/tools/qemu; \
 	if test -x $$qemu; then echo $$qemu; exit; fi; fi; \
 	echo "***" 1>&2; \
 	echo "*** Error: Couldn't find a working QEMU executable." 1>&2; \
