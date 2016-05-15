@@ -18,7 +18,7 @@ test_passed()
  exit();
 }
 
-#define NITERATIONS 5
+#define NITERATIONS 2
 
 int
 main(int argc, char *argv[])
@@ -29,9 +29,11 @@ main(int argc, char *argv[])
   int n;
   int i;
   
-  for(i = 0; i < NITERATIONS; i++){
+ /*for(i = 0; i < NITERATIONS; i++){
     buf[i] = (char)(i+(int)'0');
-  }
+  }*/
+  buf[0] = '2';
+ buf[1] = 'A';
   
   //open, write 1 byte, close
   for(i = 0; i < NITERATIONS; i++){
@@ -43,7 +45,9 @@ main(int argc, char *argv[])
       printf(1, "Write failed!\n");
       test_failed();
     }
-	printf(1, "write:%c\n", buf[i]);
+  /*if((n = read(fd, &result, 1)) != 1)
+	   printf(1, "Read failed! %d\n", n);
+	printf(1, "read:%c\n", result);*/
     close(fd);
   }
   

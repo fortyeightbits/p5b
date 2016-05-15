@@ -8,340 +8,7 @@ build xv6 using make
 **********************************************************************
 Trying to build project using make
 make
-Makefile:150: kernel/bio.d: No such file or directory
-Makefile:150: kernel/console.d: No such file or directory
-Makefile:150: kernel/exec.d: No such file or directory
-Makefile:150: kernel/file.d: No such file or directory
-Makefile:150: kernel/fs.d: No such file or directory
-Makefile:150: kernel/ide.d: No such file or directory
-Makefile:150: kernel/ioapic.d: No such file or directory
-Makefile:150: kernel/kalloc.d: No such file or directory
-Makefile:150: kernel/kbd.d: No such file or directory
-Makefile:150: kernel/lapic.d: No such file or directory
-Makefile:150: kernel/main.d: No such file or directory
-Makefile:150: kernel/mp.d: No such file or directory
-Makefile:150: kernel/picirq.d: No such file or directory
-Makefile:150: kernel/pipe.d: No such file or directory
-Makefile:150: kernel/proc.d: No such file or directory
-Makefile:150: kernel/spinlock.d: No such file or directory
-Makefile:150: kernel/string.d: No such file or directory
-Makefile:150: kernel/swtch.d: No such file or directory
-Makefile:150: kernel/syscall.d: No such file or directory
-Makefile:150: kernel/sysfile.d: No such file or directory
-Makefile:150: kernel/sysproc.d: No such file or directory
-Makefile:150: kernel/timer.d: No such file or directory
-Makefile:150: kernel/trapasm.d: No such file or directory
-Makefile:150: kernel/trap.d: No such file or directory
-Makefile:150: kernel/uart.d: No such file or directory
-Makefile:150: kernel/vectors.d: No such file or directory
-Makefile:150: kernel/vm.d: No such file or directory
-Makefile:150: kernel/bootmain.d: No such file or directory
-Makefile:150: kernel/bootasm.d: No such file or directory
-Makefile:150: kernel/multiboot.d: No such file or directory
-Makefile:150: kernel/data.d: No such file or directory
-Makefile:150: kernel/bootother.d: No such file or directory
-Makefile:150: kernel/initcode.d: No such file or directory
-Makefile:150: user/cat.d: No such file or directory
-Makefile:150: user/echo.d: No such file or directory
-Makefile:150: user/forktest.d: No such file or directory
-Makefile:150: user/grep.d: No such file or directory
-Makefile:150: user/init.d: No such file or directory
-Makefile:150: user/kill.d: No such file or directory
-Makefile:150: user/ln.d: No such file or directory
-Makefile:150: user/ls.d: No such file or directory
-Makefile:150: user/mkdir.d: No such file or directory
-Makefile:150: user/rm.d: No such file or directory
-Makefile:150: user/sh.d: No such file or directory
-Makefile:150: user/stressfs.d: No such file or directory
-Makefile:150: user/tester.d: No such file or directory
-Makefile:150: user/usertests.d: No such file or directory
-Makefile:150: user/wc.d: No such file or directory
-Makefile:150: user/zombie.d: No such file or directory
-Makefile:150: user/smallfileTest.d: No such file or directory
-Makefile:150: user/opentest.d: No such file or directory
-Makefile:150: user/read2.d: No such file or directory
-Makefile:150: user/write2.d: No such file or directory
-Makefile:150: user/ulib.d: No such file or directory
-Makefile:150: user/usys.d: No such file or directory
-Makefile:150: user/printf.d: No such file or directory
-Makefile:150: user/umalloc.d: No such file or directory
-Makefile:150: tools/mkfs.d: No such file or directory
-gcc  -iquote include -Wall -Werror -ggdb  \
-	  -M -MG tools/mkfs.c -MF tools/mkfs.d -MT tools/mkfs.d -MT tools/mkfs.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG user/umalloc.c -MF user/umalloc.d -MT user/umalloc.d -MT user/umalloc.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG user/printf.c -MF user/printf.d -MT user/printf.d -MT user/printf.o
-gcc  -I include -nostdinc -ggdb  -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG user/usys.S -MF user/usys.d -MT user/usys.d -MT user/usys.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG user/ulib.c -MF user/ulib.d -MT user/ulib.d -MT user/ulib.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG user/write2.c -MF user/write2.d -MT user/write2.d -MT user/write2.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG user/read2.c -MF user/read2.d -MT user/read2.d -MT user/read2.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG user/opentest.c -MF user/opentest.d -MT user/opentest.d -MT user/opentest.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG user/smallfileTest.c -MF user/smallfileTest.d -MT user/smallfileTest.d -MT user/smallfileTest.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG user/zombie.c -MF user/zombie.d -MT user/zombie.d -MT user/zombie.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG user/wc.c -MF user/wc.d -MT user/wc.d -MT user/wc.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG user/usertests.c -MF user/usertests.d -MT user/usertests.d -MT user/usertests.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG user/tester.c -MF user/tester.d -MT user/tester.d -MT user/tester.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG user/stressfs.c -MF user/stressfs.d -MT user/stressfs.d -MT user/stressfs.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG user/sh.c -MF user/sh.d -MT user/sh.d -MT user/sh.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG user/rm.c -MF user/rm.d -MT user/rm.d -MT user/rm.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG user/mkdir.c -MF user/mkdir.d -MT user/mkdir.d -MT user/mkdir.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG user/ls.c -MF user/ls.d -MT user/ls.d -MT user/ls.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG user/ln.c -MF user/ln.d -MT user/ln.d -MT user/ln.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG user/kill.c -MF user/kill.d -MT user/kill.d -MT user/kill.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG user/init.c -MF user/init.d -MT user/init.d -MT user/init.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG user/grep.c -MF user/grep.d -MT user/grep.d -MT user/grep.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG user/forktest.c -MF user/forktest.d -MT user/forktest.d -MT user/forktest.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG user/echo.c -MF user/echo.d -MT user/echo.d -MT user/echo.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG user/cat.c -MF user/cat.d -MT user/cat.d -MT user/cat.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG kernel/initcode.S -MF kernel/initcode.d -MT kernel/initcode.d -MT kernel/initcode.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG kernel/bootother.S -MF kernel/bootother.d -MT kernel/bootother.d -MT kernel/bootother.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG kernel/data.S -MF kernel/data.d -MT kernel/data.d -MT kernel/data.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG kernel/multiboot.S -MF kernel/multiboot.d -MT kernel/multiboot.d -MT kernel/multiboot.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG kernel/bootasm.S -MF kernel/bootasm.d -MT kernel/bootasm.d -MT kernel/bootasm.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG kernel/bootmain.c -MF kernel/bootmain.d -MT kernel/bootmain.d -MT kernel/bootmain.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG kernel/vm.c -MF kernel/vm.d -MT kernel/vm.d -MT kernel/vm.o
-perl kernel/vectors.pl > kernel/vectors.S
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG kernel/vectors.S -MF kernel/vectors.d -MT kernel/vectors.d -MT kernel/vectors.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG kernel/uart.c -MF kernel/uart.d -MT kernel/uart.d -MT kernel/uart.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG kernel/trap.c -MF kernel/trap.d -MT kernel/trap.d -MT kernel/trap.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG kernel/trapasm.S -MF kernel/trapasm.d -MT kernel/trapasm.d -MT kernel/trapasm.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG kernel/timer.c -MF kernel/timer.d -MT kernel/timer.d -MT kernel/timer.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG kernel/sysproc.c -MF kernel/sysproc.d -MT kernel/sysproc.d -MT kernel/sysproc.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG kernel/sysfile.c -MF kernel/sysfile.d -MT kernel/sysfile.d -MT kernel/sysfile.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG kernel/syscall.c -MF kernel/syscall.d -MT kernel/syscall.d -MT kernel/syscall.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG kernel/swtch.S -MF kernel/swtch.d -MT kernel/swtch.d -MT kernel/swtch.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG kernel/string.c -MF kernel/string.d -MT kernel/string.d -MT kernel/string.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG kernel/spinlock.c -MF kernel/spinlock.d -MT kernel/spinlock.d -MT kernel/spinlock.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG kernel/proc.c -MF kernel/proc.d -MT kernel/proc.d -MT kernel/proc.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG kernel/pipe.c -MF kernel/pipe.d -MT kernel/pipe.d -MT kernel/pipe.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG kernel/picirq.c -MF kernel/picirq.d -MT kernel/picirq.d -MT kernel/picirq.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG kernel/mp.c -MF kernel/mp.d -MT kernel/mp.d -MT kernel/mp.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG kernel/main.c -MF kernel/main.d -MT kernel/main.d -MT kernel/main.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG kernel/lapic.c -MF kernel/lapic.d -MT kernel/lapic.d -MT kernel/lapic.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG kernel/kbd.c -MF kernel/kbd.d -MT kernel/kbd.d -MT kernel/kbd.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG kernel/kalloc.c -MF kernel/kalloc.d -MT kernel/kalloc.d -MT kernel/kalloc.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG kernel/ioapic.c -MF kernel/ioapic.d -MT kernel/ioapic.d -MT kernel/ioapic.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG kernel/ide.c -MF kernel/ide.d -MT kernel/ide.d -MT kernel/ide.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG kernel/fs.c -MF kernel/fs.d -MT kernel/fs.d -MT kernel/fs.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG kernel/file.c -MF kernel/file.d -MT kernel/file.d -MT kernel/file.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG kernel/exec.c -MF kernel/exec.d -MT kernel/exec.d -MT kernel/exec.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG kernel/console.c -MF kernel/console.d -MT kernel/console.d -MT kernel/console.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		-M -MG kernel/bio.c -MF kernel/bio.d -MT kernel/bio.d -MT kernel/bio.o
-gcc  -I include -nostdinc -ggdb  -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c kernel/bootasm.S -o kernel/bootasm.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 \
-		 -Os -c -o kernel/bootmain.o kernel/bootmain.c
-ld  -m    elf_i386 -nostdlib --omagic \
-		--entry=start --section-start=.text=0x7C00 \
-		--output=kernel/bootblock.out kernel/bootasm.o kernel/bootmain.o
-objcopy -S -O binary -j .text kernel/bootblock.out kernel/bootblock
-./kernel/sign.pl kernel/bootblock
-boot block is 447 bytes (max 510)
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/bio.o kernel/bio.c
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/console.o kernel/console.c
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/exec.o kernel/exec.c
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/file.o kernel/file.c
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/fs.o kernel/fs.c
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/ide.o kernel/ide.c
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/ioapic.o kernel/ioapic.c
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/kalloc.o kernel/kalloc.c
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/kbd.o kernel/kbd.c
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/lapic.o kernel/lapic.c
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/main.o kernel/main.c
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/mp.o kernel/mp.c
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/picirq.o kernel/picirq.c
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/pipe.o kernel/pipe.c
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/proc.o kernel/proc.c
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/spinlock.o kernel/spinlock.c
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/string.o kernel/string.c
-gcc  -I include -nostdinc -ggdb  -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c kernel/swtch.S -o kernel/swtch.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/syscall.o kernel/syscall.c
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/sysfile.o kernel/sysfile.c
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/sysproc.o kernel/sysproc.c
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/timer.o kernel/timer.c
-gcc  -I include -nostdinc -ggdb  -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c kernel/trapasm.S -o kernel/trapasm.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/trap.o kernel/trap.c
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/uart.o kernel/uart.c
-gcc  -I include -nostdinc -ggdb  -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c kernel/vectors.S -o kernel/vectors.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o kernel/vm.o kernel/vm.c
-gcc  -I include -nostdinc -ggdb  -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c kernel/multiboot.S -o kernel/multiboot.o
-gcc  -I include -nostdinc -ggdb  -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c kernel/data.S -o kernel/data.o
-gcc  -I include -nostdinc -ggdb  -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c kernel/bootother.S -o kernel/bootother.o
-ld  -m    elf_i386 -nostdlib --omagic \
-		--entry=start --section-start=.text=0x7000 \
-		--output=kernel/bootother.out kernel/bootother.o
-objcopy -S -O binary kernel/bootother.out bootother
-gcc  -I include -nostdinc -ggdb  -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c kernel/initcode.S -o kernel/initcode.o
-ld  -m    elf_i386 -nostdlib --omagic \
-		--entry=start --section-start=.text=0x0 \
-		--output=kernel/initcode.out kernel/initcode.o
-objcopy -S -O binary kernel/initcode.out initcode
-ld  -m    elf_i386 -nostdlib --omagic \
-		--section-start=.text=0x100000 --entry=main --output=kernel/kernel \
-		kernel/multiboot.o kernel/data.o kernel/bio.o kernel/console.o kernel/exec.o kernel/file.o kernel/fs.o kernel/ide.o kernel/ioapic.o kernel/kalloc.o kernel/kbd.o kernel/lapic.o kernel/main.o kernel/mp.o kernel/picirq.o kernel/pipe.o kernel/proc.o kernel/spinlock.o kernel/string.o kernel/swtch.o kernel/syscall.o kernel/sysfile.o kernel/sysproc.o kernel/timer.o kernel/trapasm.o kernel/trap.o kernel/uart.o kernel/vectors.o kernel/vm.o \
-		-b binary initcode bootother
-dd if=/dev/zero of=xv6.img count=10000
-10000+0 records in
-10000+0 records out
-5120000 bytes (5.1 MB) copied, 0.0106455 s, 481 MB/s
-dd if=kernel/bootblock of=xv6.img conv=notrunc
-1+0 records in
-1+0 records out
-512 bytes (512 B) copied, 6.3351e-05 s, 8.1 MB/s
-dd if=kernel/kernel of=xv6.img seek=1 conv=notrunc
-253+1 records in
-253+1 records out
-129560 bytes (130 kB) copied, 0.000270046 s, 480 MB/s
-gcc -c  -iquote include -Wall -Werror -ggdb  -o tools/mkfs.o tools/mkfs.c
-gcc  tools/mkfs.o -o tools/mkfs
-mkdir -p fs
-cp README fs/README
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/cat.o user/cat.c
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/ulib.o user/ulib.c
-gcc  -I include -nostdinc -ggdb  -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c user/usys.S -o user/usys.o
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/printf.o user/printf.c
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/umalloc.o user/umalloc.c
-mkdir -p user/bin
-ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/cat user/cat.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
-cp user/bin/cat fs/cat
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/echo.o user/echo.c
-ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/echo user/echo.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
-cp user/bin/echo fs/echo
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/forktest.o user/forktest.c
-ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/forktest user/forktest.o user/ulib.o user/usys.o
-cp user/bin/forktest fs/forktest
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/grep.o user/grep.c
-ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/grep user/grep.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
-cp user/bin/grep fs/grep
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/init.o user/init.c
-ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/init user/init.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
-cp user/bin/init fs/init
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/kill.o user/kill.c
-ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/kill user/kill.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
-cp user/bin/kill fs/kill
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/ln.o user/ln.c
-ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/ln user/ln.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
-cp user/bin/ln fs/ln
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/ls.o user/ls.c
-ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/ls user/ls.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
-cp user/bin/ls fs/ls
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/mkdir.o user/mkdir.c
-ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/mkdir user/mkdir.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
-cp user/bin/mkdir fs/mkdir
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/rm.o user/rm.c
-ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/rm user/rm.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
-cp user/bin/rm fs/rm
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/sh.o user/sh.c
-ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/sh user/sh.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
-cp user/bin/sh fs/sh
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/stressfs.o user/stressfs.c
-ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/stressfs user/stressfs.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
-cp user/bin/stressfs fs/stressfs
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/tester.o user/tester.c
-ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/tester user/tester.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
-cp user/bin/tester fs/tester
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/usertests.o user/usertests.c
-ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/usertests user/usertests.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
-cp user/bin/usertests fs/usertests
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/wc.o user/wc.c
-ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/wc user/wc.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
-cp user/bin/wc fs/wc
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/zombie.o user/zombie.c
-ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/zombie user/zombie.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
-cp user/bin/zombie fs/zombie
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/smallfileTest.o user/smallfileTest.c
-ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/smallfileTest user/smallfileTest.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
-cp user/bin/smallfileTest fs/smallfileTest
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/opentest.o user/opentest.c
-ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/opentest user/opentest.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
-cp user/bin/opentest fs/opentest
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/read2.o user/read2.c
-ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/read2 user/read2.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
-cp user/bin/read2 fs/read2
-gcc  -I include -nostdinc -Wall -Werror -ggdb -fno-pic -fno-builtin -fno-strict-aliasing -fno-stack-protector -m32 -c -o user/write2.o user/write2.c
-ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --output=user/bin/write2 user/write2.o user/ulib.o user/usys.o user/printf.o user/umalloc.o
-cp user/bin/write2 fs/write2
-./tools/mkfs fs.img fs
-used 29 (bit 1 ninode 26) free 29 total 1024
-cat
-grep
-rm
-tester
-stressfs
-write2
-sh
-usertests
-read2
-mkdir
-init
-forktest
-opentest
-smallfileTest
-README
-wc
-echo
-zombie
-ln
-ls
-kill
-balloc: first 506 blocks have been allocated
-balloc: write bitmap block at sector 28
-rm user/bin/stressfs user/bin/grep user/bin/write2 user/bin/tester user/bin/kill user/bin/cat user/bin/mkdir user/bin/init user/bin/rm user/bin/echo user/bin/ls user/bin/ln user/bin/usertests user/bin/sh user/bin/wc user/bin/opentest user/bin/smallfileTest user/bin/zombie user/bin/read2
+make: Nothing to be done for `all'.
 
 
 test build PASSED
@@ -365,28 +32,28 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
-grep
-rm
-tester
-stressfs
-write2
-sh
-usertests
+kill
 read2
-mkdir
-init
-forktest
+usertests
+cat
+tester
+grep
+write2
 opentest
 smallfileTest
-README
-wc
+stressfs
 echo
-zombie
+mkdir
 ln
+forktest
 ls
-kill
-balloc: first 507 blocks have been allocated
+wc
+rm
+init
+sh
+zombie
+README
+balloc: first 509 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -422,28 +89,28 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
-grep
-rm
-tester
-stressfs
-write2
-sh
-usertests
+kill
 read2
-mkdir
-init
-forktest
+usertests
+cat
+tester
+grep
+write2
 opentest
 smallfileTest
-README
-wc
+stressfs
 echo
-zombie
+mkdir
 ln
+forktest
 ls
-kill
-balloc: first 507 blocks have been allocated
+wc
+rm
+init
+sh
+zombie
+README
+balloc: first 509 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -479,28 +146,28 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
-grep
-rm
-tester
-stressfs
-write2
-sh
-usertests
+kill
 read2
-mkdir
-init
-forktest
+usertests
+cat
+tester
+grep
+write2
 opentest
 smallfileTest
-README
-wc
+stressfs
 echo
-zombie
+mkdir
 ln
+forktest
 ls
-kill
-balloc: first 508 blocks have been allocated
+wc
+rm
+init
+sh
+zombie
+README
+balloc: first 511 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -536,28 +203,28 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
-grep
-rm
-tester
-stressfs
-write2
-sh
-usertests
+kill
 read2
-mkdir
-init
-forktest
+usertests
+cat
+tester
+grep
+write2
 opentest
 smallfileTest
-README
-wc
+stressfs
 echo
-zombie
+mkdir
 ln
+forktest
 ls
-kill
-balloc: first 508 blocks have been allocated
+wc
+rm
+init
+sh
+zombie
+README
+balloc: first 510 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -595,28 +262,28 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
-grep
-rm
-tester
-stressfs
-write2
-sh
-usertests
+kill
 read2
-mkdir
-init
-forktest
+usertests
+cat
+tester
+grep
+write2
 opentest
 smallfileTest
-README
-wc
+stressfs
 echo
-zombie
+mkdir
 ln
+forktest
 ls
-kill
-balloc: first 508 blocks have been allocated
+wc
+rm
+init
+sh
+zombie
+README
+balloc: first 510 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -652,28 +319,28 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
-grep
-rm
-tester
-stressfs
-write2
-sh
-usertests
+kill
 read2
-mkdir
-init
-forktest
+usertests
+cat
+tester
+grep
+write2
 opentest
 smallfileTest
-README
-wc
+stressfs
 echo
-zombie
+mkdir
 ln
+forktest
 ls
-kill
-balloc: first 508 blocks have been allocated
+wc
+rm
+init
+sh
+zombie
+README
+balloc: first 510 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -711,28 +378,28 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
-grep
-rm
-tester
-stressfs
-write2
-sh
-usertests
+kill
 read2
-mkdir
-init
-forktest
+usertests
+cat
+tester
+grep
+write2
 opentest
 smallfileTest
-README
-wc
+stressfs
 echo
-zombie
+mkdir
 ln
+forktest
 ls
-kill
-balloc: first 508 blocks have been allocated
+wc
+rm
+init
+sh
+zombie
+README
+balloc: first 510 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -746,7 +413,7 @@ $ tester
 tester
 Data mismatch.
 TEST FAILED
-$ 
+
 
 test write2 FAILED (0 of 10)
  (Repeatedly opens, writes, closes a small file. The last write should be the one that is persisted.)
@@ -770,28 +437,28 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
-grep
-rm
-tester
-stressfs
-write2
-sh
-usertests
+kill
 read2
-mkdir
-init
-forktest
+usertests
+cat
+tester
+grep
+write2
 opentest
 smallfileTest
-README
-wc
+stressfs
 echo
-zombie
+mkdir
 ln
+forktest
 ls
-kill
-balloc: first 508 blocks have been allocated
+wc
+rm
+init
+sh
+zombie
+README
+balloc: first 511 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -804,7 +471,7 @@ init: starting sh
 $ tester
 tester
 TEST PASSED
-$ 
+
 
 test write3 PASSED (10 of 10)
  (Repeatedly opens, writes to the end, closes a small file until file is full.)
@@ -827,28 +494,28 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
-grep
-rm
-tester
-stressfs
-write2
-sh
-usertests
+kill
 read2
-mkdir
-init
-forktest
+usertests
+cat
+tester
+grep
+write2
 opentest
 smallfileTest
-README
-wc
+stressfs
 echo
-zombie
+mkdir
 ln
+forktest
 ls
-kill
-balloc: first 509 blocks have been allocated
+wc
+rm
+init
+sh
+zombie
+README
+balloc: first 511 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -861,6 +528,7 @@ init: starting sh
 $ tester
 tester
 TEST PASSED
+
 
 test write4 PASSED (10 of 10)
  (Small write followed by a big write to a small file should truncate the big write upto max small file size.)
@@ -883,28 +551,28 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
-grep
-rm
-tester
-stressfs
-write2
-sh
-usertests
+kill
 read2
-mkdir
-init
-forktest
+usertests
+cat
+tester
+grep
+write2
 opentest
 smallfileTest
-README
-wc
+stressfs
 echo
-zombie
+mkdir
 ln
+forktest
 ls
-kill
-balloc: first 508 blocks have been allocated
+wc
+rm
+init
+sh
+zombie
+README
+balloc: first 511 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -917,7 +585,7 @@ init: starting sh
 $ tester
 tester
 TEST PASSED
-
+$ 
 
 test readonly PASSED (10 of 10)
  (Makes sure small files can be opened as read only and writes would fail.)
@@ -940,28 +608,28 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
-grep
-rm
-tester
-stressfs
-write2
-sh
-usertests
+kill
 read2
-mkdir
-init
-forktest
+usertests
+cat
+tester
+grep
+write2
 opentest
 smallfileTest
-README
-wc
+stressfs
 echo
-zombie
+mkdir
 ln
+forktest
 ls
-kill
-balloc: first 509 blocks have been allocated
+wc
+rm
+init
+sh
+zombie
+README
+balloc: first 511 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -997,28 +665,28 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
-grep
-rm
-tester
-stressfs
-write2
-sh
-usertests
+kill
 read2
-mkdir
-init
-forktest
+usertests
+cat
+tester
+grep
+write2
 opentest
 smallfileTest
-README
-wc
+stressfs
 echo
-zombie
+mkdir
 ln
+forktest
 ls
-kill
-balloc: first 508 blocks have been allocated
+wc
+rm
+init
+sh
+zombie
+README
+balloc: first 510 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -1055,28 +723,28 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
-grep
-rm
-tester
-stressfs
-write2
-sh
-usertests
+kill
 read2
-mkdir
-init
-forktest
+usertests
+cat
+tester
+grep
+write2
 opentest
 smallfileTest
-README
-wc
+stressfs
 echo
-zombie
+mkdir
 ln
+forktest
 ls
-kill
-balloc: first 508 blocks have been allocated
+wc
+rm
+init
+sh
+zombie
+README
+balloc: first 510 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -1095,7 +763,7 @@ creating large file: 3
 all free blocks are used
 bytes written = 25
 TEST PASSED
-$ 
+
 
 test fulldisk PASSED (10 of 10)
  (First uses all free blocks on disk for normal files and then makes sure small files can still be created. ***Note that the test will take a while since big files are created.***)
@@ -1118,28 +786,28 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
-grep
-rm
-tester
-stressfs
-write2
-sh
-usertests
+kill
 read2
-mkdir
-init
-forktest
+usertests
+cat
+tester
+grep
+write2
 opentest
 smallfileTest
-README
-wc
+stressfs
 echo
-zombie
+mkdir
 ln
+forktest
 ls
-kill
-balloc: first 509 blocks have been allocated
+wc
+rm
+init
+sh
+zombie
+README
+balloc: first 511 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -1177,28 +845,28 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
-grep
-rm
-tester
-stressfs
-write2
-sh
-usertests
+kill
 read2
-mkdir
-init
-forktest
+usertests
+cat
+tester
+grep
+write2
 opentest
 smallfileTest
-README
-wc
+stressfs
 echo
-zombie
+mkdir
 ln
+forktest
 ls
-kill
-balloc: first 509 blocks have been allocated
+wc
+rm
+init
+sh
+zombie
+README
+balloc: first 511 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -1236,28 +904,28 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
-grep
-rm
-tester
-stressfs
-write2
-sh
-usertests
+kill
 read2
-mkdir
-init
-forktest
+usertests
+cat
+tester
+grep
+write2
 opentest
 smallfileTest
-README
-wc
+stressfs
 echo
-zombie
+mkdir
 ln
+forktest
 ls
-kill
-balloc: first 511 blocks have been allocated
+wc
+rm
+init
+sh
+zombie
+README
+balloc: first 513 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -1293,28 +961,28 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
-grep
-rm
-tester
-stressfs
-write2
-sh
-usertests
+kill
 read2
-mkdir
-init
-forktest
+usertests
+cat
+tester
+grep
+write2
 opentest
 smallfileTest
-README
-wc
+stressfs
 echo
-zombie
+mkdir
 ln
+forktest
 ls
-kill
-balloc: first 510 blocks have been allocated
+wc
+rm
+init
+sh
+zombie
+README
+balloc: first 512 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -1523,7 +1191,7 @@ deleting and recreating file at inode 178
 deleting and recreating file at inode 187
 deleting and recreating file at inode 196
 TEST PASSED
-$ 
+
 
 test inode PASSED (10 of 10)
  (Uses all inodes in the file system; then repeatedly deleted and creates a file and makes sure the correct inode is reused for the new file.)
@@ -1546,28 +1214,28 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
-grep
-rm
-tester
-stressfs
-write2
-sh
-usertests
+kill
 read2
-mkdir
-init
-forktest
+usertests
+cat
+tester
+grep
+write2
 opentest
 smallfileTest
-README
-wc
+stressfs
 echo
-zombie
+mkdir
 ln
+forktest
 ls
-kill
-balloc: first 510 blocks have been allocated
+wc
+rm
+init
+sh
+zombie
+README
+balloc: first 512 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -1814,7 +1482,7 @@ recreating file at inode 178
 recreating file at inode 187
 recreating file at inode 196
 TEST PASSED
-
+$ 
 
 test inode2 PASSED (10 of 10)
  (Uses all inodes in the file system; then repeatedly deletes bunch of files and then creates that many files and makes sure the correct inodes are reused for the new files.)
@@ -1837,28 +1505,28 @@ ld  -m    elf_i386 -nostdlib --omagic --entry=main --section-start=.text=0x0 --o
 cp user/bin/tester fs/tester
 ./tools/mkfs fs.img fs
 used 29 (bit 1 ninode 26) free 29 total 1024
-cat
-grep
-rm
-tester
-stressfs
-write2
-sh
-usertests
+kill
 read2
-mkdir
-init
-forktest
+usertests
+cat
+tester
+grep
+write2
 opentest
 smallfileTest
-README
-wc
+stressfs
 echo
-zombie
+mkdir
 ln
+forktest
 ls
-kill
-balloc: first 556 blocks have been allocated
+wc
+rm
+init
+sh
+zombie
+README
+balloc: first 558 blocks have been allocated
 balloc: write bitmap block at sector 28
 rm user/bin/tester
 make qemu-nox CPUS=1
@@ -1927,7 +1595,7 @@ fork test: ok
 bigdir test: ok
 exec test
 TEST PASSED
-$ 
+
 
 test usertests PASSED (10 of 10)
  (Running standard tests to make sure you did not break anything for normal files. ***Note that the test will take a while since a lot of things are being tested.***)
