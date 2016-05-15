@@ -301,7 +301,10 @@ iput(struct inode *ip)
       panic("iput busy");
     ip->flags |= I_BUSY;
     release(&icache.lock);
-    itrunc(ip);
+    if(ip->type != T_SMALLFILE)
+    {
+        itrunc(ip);
+    }
     ip->type = 0;
     iupdate(ip);
     acquire(&icache.lock);

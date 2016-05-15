@@ -20,7 +20,8 @@ USER_PROGS := \
 	smallfileTest\
 	opentest\
 	read2\
-	write2
+	write2\
+	remove
 USER_PROGS := $(addprefix user/, $(USER_PROGS))
 
 # user library files
