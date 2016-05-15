@@ -43,6 +43,7 @@ main(int argc, char *argv[])
       printf(1, "Write failed!\n");
       test_failed();
     }
+	printf(1, "write:%c\n", buf[i]);
     close(fd);
   }
   
@@ -55,10 +56,12 @@ main(int argc, char *argv[])
     printf(1, "Read failed! %d\n", n);
     test_failed();
   }
+  printf(1, "read:%c\n", result);
   close(fd);
   
+  
   if(result != buf[NITERATIONS-1]){
-    printf(1, "buf[0] : %d ; result: %d\n", buf[0], result);
+    //printf(1, "buf[0] : %d ; result: %d\n", buf[0], result);
     printf(1, "Data mismatch.\n");
     test_failed();
   }
