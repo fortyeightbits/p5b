@@ -462,8 +462,9 @@ writei(struct inode *ip, char *src, uint off, uint n)
   if(ip->type == T_SMALLFILE){
       if(off+n > 52)
           n = 52 - off;
-          memmove((((char*)(&ip->addrs))+off), src, n);
-//      cprintf("memmove dst: %d\n", *((char*)(memmove((((char*)(&ip->addrs))+off), src, n))));
+        memmove((((char*)(&ip->addrs))+off), src, n);
+//        cprintf("memmove dst: %d\n", *((char*)(memmove((((char*)(&ip->addrs))+off), src, n))));
+//        cprintf("address: %d\n", ((char*)(&ip->addrs))+off);
 //      cprintf("src: %d\n", *src);
 //      uint temp;
 //      for(temp = 0; temp < 52; temp++){
@@ -489,10 +490,13 @@ writei(struct inode *ip, char *src, uint off, uint n)
         brelse(bp);
       }
     }
-  if(n > 0 && off > ip->size){
+
+  if((n > 0 && off > ip->size) || ip->type == T_SMALLFILE){
     ip->size = off;
+    //cprintf("Update called! Inode num is: %d\n", ip->inum);
     iupdate(ip);
   }
+
   return n;
 }
 
